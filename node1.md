@@ -1,4 +1,4 @@
-#1.渲染视图模板方法：el， template, render
+# 1.渲染视图模板方法：el， template, render
 
  1> render:
 ```js
@@ -20,9 +20,9 @@
     })
 ```
 
-#2.vuex：专为vue应用程序开发的状态管理模式
+# 2.vuex：专为vue应用程序开发的状态管理模式
 
-###1.下载 cnpm i vue vuex -D
+### 1.下载 cnpm i vue vuex -D
 
 ```js
     <script src='./lib/vue.js'></script>
@@ -56,9 +56,9 @@ let store = new Vuex.Store({
 commit调用mutations里的方法，dispatch调用actions里的方法，actions是定义方法调用的是mutations里的方法
 ```
 
-###2.Vue核心概念
+### 2.Vue核心概念
 
-####1.State
+#### 1.State
 
 ```js
     let {mapStates} = Vuex
@@ -74,7 +74,7 @@ commit调用mutations里的方法，dispatch调用actions里的方法，actions�
         }
     })
 ```
-####2. getters:对数据进行过滤并计算的时候使用getters方便一些
+#### 2. getters:对数据进行过滤并计算的时候使用getters方便一些
 
 ```js
     let {mapStates, mapGetters} = Vuex
@@ -90,7 +90,7 @@ commit调用mutations里的方法，dispatch调用actions里的方法，actions�
         }
     })
 ```
-####3.mutations:更待Vuex的store中的状态的唯一方法是提交mutations。每一个mutations都有一个字符串的时间类型和一个回调函数
+#### 3.mutations:更待Vuex的store中的状态的唯一方法是提交mutations。每一个mutations都有一个字符串的时间类型和一个回调函数
 ```js
     let {mapMutations} = Vuex
     let vm = new Vue({
@@ -144,7 +144,7 @@ commit调用mutations里的方法，dispatch调用actions里的方法，actions�
 
 ```
 
-####4.actions: 类似于mutations，单是也有不同之处
+#### 4.actions: 类似于mutations，单是也有不同之处
 
     不同点： 1>Acttion提价的是mutation，而不是直接变更的状态
             2>Action可以包含任意异步操作
